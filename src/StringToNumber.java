@@ -17,6 +17,8 @@ public class StringToNumber {
             for(int i = 0; i<inputString.length; i++){
                 if(inputString[i] == '-')
                     continue;
+                if(inputString[i]<='0' || inputString[i]>='9')
+                    throw new IllegalArgumentException("Not a valid numeric number");
                 int value = inputString[i] - '0'; //subtracting thSystem.out.println("Current value: " +value);
                 result = result*10 + value;                 //calculating the result by appending each character to integer
             }
