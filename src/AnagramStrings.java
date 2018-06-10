@@ -2,8 +2,8 @@ import java.util.HashMap;
 
 public class AnagramStrings {
     public static void main(String[] args) {
-        String s1 = "";
-        String s2 = "";
+        String s1 = "rat";
+        String s2 = "car";
         System.out.println(isAnagram(s1, s2));
 
     }
