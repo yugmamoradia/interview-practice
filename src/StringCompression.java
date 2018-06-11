@@ -7,7 +7,8 @@ public class StringCompression {
         char last = input.charAt(0);
         if(input == null)
             throw new NullPointerException("Input is null");
-        if(input == "")
+        // Always use equals method when comparing String values
+        if(input.equals(""))
             return "Input is empty";
         int count = 0;
         for(int i = 0; i < input.length(); i++){
