@@ -1,6 +1,6 @@
 public class StringCompression {
     public static void main(String[] args) {
-        System.out.println(compressString("aaaabbbbcccdddeee"));
+        System.out.println(compressString("@@@!!!!"));
     }
     public static String compressString(String input){
         StringBuffer result = new StringBuffer();

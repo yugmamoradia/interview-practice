@@ -1,7 +1,7 @@
 
 public class ReverseInteger {
     public static void main(String[] args) {
-        System.out.println(reverse(-2147483648));
+        System.out.println(reverse(1534236469));
     }
         public static int reverse(int input) {
             int modResult;
