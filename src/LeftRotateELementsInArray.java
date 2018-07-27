@@ -1,4 +1,4 @@
-public class ShiftElementsInArray {
+public class LeftRotateELementsInArray {
 
     public static void main(String[] args) {
         int[] arr = {2,4,6,9,11,5,6,8};
