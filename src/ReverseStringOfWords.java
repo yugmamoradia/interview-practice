@@ -1,6 +1,6 @@
 public class ReverseStringOfWords {
     public static void main(String[] args) {
-        String input = "   This is my   School";
+        String input = "   This is my   School.";
         System.out.println(reverseWords(input));
     }
     public static String reverseWords(String input) {
@@ -9,8 +9,7 @@ public class ReverseStringOfWords {
         //the space occurrences in the trimmed String with just one space and make it a normal String.
         String str = input.trim().replaceAll(" +", " ");
         StringBuilder sb = new StringBuilder(); //Creating a Stringbuilder to move the words in the string
-        String[] temp = str.split(" "); //Store all the words in String array using Split function.
-
+        String[] temp = str.split(" ");//Store all the words in String array using Split function.
         for (i = temp.length - 1 ; i>= 0; i--) //Appending from the last word to the beginning of StrinBuilder
         {
             sb.append(temp[i]);

@@ -1,11 +1,8 @@
-import java.util.*;
-import java.io.*;
+public class IsUniqueString{
 
-public class IsUniqueString {
     public static void main(String args[]) {
         String str = "abadefghij";
         System.out.println(isUnique(str));
-
     }
 
     public static boolean isUnique(String str){

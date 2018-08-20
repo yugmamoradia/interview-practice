@@ -2,12 +2,11 @@ import java.util.HashMap;
 
 public class AnagramStrings {
     public static void main(String[] args) {
-        String s1 = "rat";
-        String s2 = "car";
+        String s1 = "silent";
+        String s2 = "listen";
         System.out.println(isAnagram(s1, s2));
 
     }
-
     public static boolean isAnagram(String s1, String s2) {
         if (s1 != null || s2 != null || s1 != "" || s2 != "") {
 
@@ -38,7 +37,7 @@ public class AnagramStrings {
                     myMap.put(string2Letters[i], count-1) ;
                 }
             }
-            Integer zero = new Integer(0);
+            Integer zero = 0;
             for(Integer result : myMap.values()){
                 if(zero.equals(result)){
                     return true;

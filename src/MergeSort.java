@@ -3,7 +3,7 @@ public class MergeSort {
     public static void main(String[] args) {
         MergeSort m= new MergeSort();
 
-        int[] arr = {10, 12, 2, 5, 9, 7, 11, 1, 22};
+        int[] arr = {3, 2, 4, 5, 9, 7, 11, 1, 22};
         System.out.println("The unSorted array is: ");
         for(int i=0; i<arr.length; i++) {
             System.out.print(arr[i] + ", ");
