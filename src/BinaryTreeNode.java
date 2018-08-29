@@ -154,10 +154,10 @@ public class BinaryTreeNode {
                 TreeNode levelNode = queue.poll();
                 list.add(levelNode.data);   //Add all the values from this current level
                 if (levelNode.left != null) {
-                    queue.offer(levelNode.left);
+                    queue.add(levelNode.left);
                 }
                 if (levelNode.right != null) {
-                    queue.offer(levelNode.right);
+                    queue.add(levelNode.right);
                 }
             }
             result.add(list);

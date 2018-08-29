@@ -1,6 +1,6 @@
 public class ReverseStringOfWords {
     public static void main(String[] args) {
-        String input = "   This is my   School.";
+        String input = "   This is my   School";
         System.out.println(reverseWords(input));
     }
     public static String reverseWords(String input) {
@@ -15,6 +15,7 @@ public class ReverseStringOfWords {
             sb.append(temp[i]);
             sb.append(" "); //Appending the space after each word
         }
-        return sb.length() == 0 ? "" : sb.substring(0, sb.length() - 1); //returning the String formed in the StringBuilder as final reverse String
+        return new String(sb);
+        //return sb.length() == 0 ? "" : sb.substring(0, sb.length() - 1); //returning the String formed in the StringBuilder as final reverse String
     }
 }

@@ -16,7 +16,7 @@ public class FindFourElements {
             for(int j = i+1; j<n; j++){
                 int sum = arr[i] + arr[j];          //Doing sum of arr[i] & arr[j];
                 if(!map.containsKey(sum)){          //Checking if the KEY(sum) exists in Map, if not put the key
-                    map.put(sum, new pair(i,j));    //and respective pair of elements
+                    map.put(sum, new pair(arr[i],arr[j]));    //and respective pair of elements
                 }
                 else{
                     pair p = map.get(sum);          //else get the values to key in object of pair.
@@ -29,7 +29,7 @@ public class FindFourElements {
     }
 
     public static void main(String[] args) {
-        int[] arr = {2,3,-5,-2,1,4,6};
+        int[] arr = {2,7,-5,-2,1,4,6};
         FindFourElements find = new FindFourElements();
         find.findPairs(arr);
     }
